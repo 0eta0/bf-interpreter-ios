@@ -15,6 +15,8 @@
 		66A275D024869BD500EBD64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A275CE24869BD500EBD64C /* LaunchScreen.storyboard */; };
 		66A275DB24869BD500EBD64C /* BF_InterpreterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A275DA24869BD500EBD64C /* BF_InterpreterTests.swift */; };
 		66A275E624869BD500EBD64C /* BF_InterpreterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A275E524869BD500EBD64C /* BF_InterpreterUITests.swift */; };
+		66A275F424869BE700EBD64C /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A275F324869BE700EBD64C /* Interpreter.swift */; };
+		66A275F62486A24600EBD64C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A275F52486A24600EBD64C /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		66A275E124869BD500EBD64C /* BF-InterpreterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BF-InterpreterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A275E524869BD500EBD64C /* BF_InterpreterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BF_InterpreterUITests.swift; sourceTree = "<group>"; };
 		66A275E724869BD500EBD64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66A275F324869BE700EBD64C /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		66A275F52486A24600EBD64C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				66A275C324869BD300EBD64C /* AppDelegate.swift */,
 				66A275C524869BD300EBD64C /* SceneDelegate.swift */,
 				66A275C724869BD300EBD64C /* ViewController.swift */,
+				66A275F324869BE700EBD64C /* Interpreter.swift */,
 				66A275C924869BD300EBD64C /* Main.storyboard */,
 				66A275CC24869BD500EBD64C /* Assets.xcassets */,
 				66A275CE24869BD500EBD64C /* LaunchScreen.storyboard */,
 				66A275D124869BD500EBD64C /* Info.plist */,
+				66A275F52486A24600EBD64C /* Extension.swift */,
 			);
 			path = "BF-Interpreter";
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A275F62486A24600EBD64C /* Extension.swift in Sources */,
+				66A275F424869BE700EBD64C /* Interpreter.swift in Sources */,
 				66A275C824869BD300EBD64C /* ViewController.swift in Sources */,
 				66A275C424869BD300EBD64C /* AppDelegate.swift in Sources */,
 				66A275C624869BD300EBD64C /* SceneDelegate.swift in Sources */,
