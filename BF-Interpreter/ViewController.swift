@@ -24,13 +24,19 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         sourceText.endEditing(true)
         let b = try! Brainfuck(sourceText.text)
-        let result = try! b.run()
+        var result = "----------\n"
+        result += try! b.run()
+        result += "\n----------\n"
+        result += "SUMMARY: program stopped after \(b.stepCounter) step(s) with output:\n"
+        let s = b.output.map { String(format: "%02X", $0) }.joined(separator: " ")
+        result += "    HEX: \(s)\n"
+        result += "    STR: \(b.outputString())\n"
         resultText.text = result
     }
     
     @IBAction func help(_ sender: Any) {
         
-        sourceText.text = "++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>-.>++++++++++++++++++.-----------------.+++++++++++++.+++++++."
+        sourceText.text = "++++++++++[>+>+++>+++++++>++++++++++<<<<-]>>>>+.+++++++++++++++++.-----------------.+++++++++++++.+++++++."
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
